@@ -7,7 +7,7 @@ const cors = require("cors");
 
 const app = express();
 
-const allowedOrigins = ['https://zynco.netlify.app'];
+// const allowedOrigins = ['https://zynco.netlify.app'];
 
 const server_config = require("./configs/server.config");
 const db_config = require("./configs/db.config");
@@ -30,7 +30,12 @@ const paymentInRoutes = require("./routes/paymentIn.routes")
 const customerRoutes = require("./routes/customer.routes");
 
 app.use(cors({
-  origin: ["http://localhost:8080", "http://localhost:5173", "http://127.0.0.1:5173", "https://zynco.netlify.app"], // Allow multiple origins
+  origin: [
+    "http://localhost:8080",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "https://zynco.netlify.app"
+  ], // Allow multiple origins
   credentials: true
 }));
 app.use(express.json());
