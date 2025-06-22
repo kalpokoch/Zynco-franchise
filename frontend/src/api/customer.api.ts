@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'import.meta.env.VITE_CUSTOMER_API_URL as string';
+const API_URL = import.meta.env.VITE_CUSTOMER_API_URL as string;
 
 // Types
 export interface Customer {

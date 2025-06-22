@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Base API URL
-const API_URL = "import.meta.env.VITE_API_URL as string";
+const API_URL = import.meta.env.VITE_API_URL as string;
 
 // Define the FranchiseData interface
 export interface ProductData {

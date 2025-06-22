@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const API_URL = "http://localhost:8888/Zync-Franc/api/v1";
-const API_URL = "import.meta.env.VITE_API_URL as string";
+const API_URL = import.meta.env.VITE_API_URL as string;
 
 // Get JWT Token from local storage (if using authentication)
 const getAuthToken = () => localStorage.getItem("token") || localStorage.getItem("accessToken");
