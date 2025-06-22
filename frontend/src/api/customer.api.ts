@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-// const API_URL = 'http://localhost:8888/Zync-Franc/api/v1/customers';
 const API_URL = 'import.meta.env.VITE_CUSTOMER_API_URL as string';
 
 // Types
