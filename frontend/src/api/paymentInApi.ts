@@ -15,7 +15,7 @@ export interface PaymentInResponse {
   data?: any;
 }
 
-const API_URL = 'http://localhost:8888/Zync-Franc/api/v1';
+const API_URL = 'import.meta.env.VITE_API_URL as string';
 
 export async function createPaymentIn(paymentIn: PaymentInData, token?: string): Promise<PaymentInResponse> {
   try {
