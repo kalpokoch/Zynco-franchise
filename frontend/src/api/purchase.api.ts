@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = "http://localhost:8888/Zync-Franc/api/v1"; // Changed port to 8888 to match product API
+const API_URL = "import.meta.env.VITE_API_URL as string"; // Changed port to 8888 to match product API
 
 export interface Product {
     productName: string;
