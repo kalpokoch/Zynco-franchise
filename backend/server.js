@@ -7,6 +7,8 @@ const cors = require("cors");
 
 const app = express();
 
+const allowedOrigins = ['https://zynco.netlify.app'];
+
 const server_config = require("./configs/server.config");
 const db_config = require("./configs/db.config");
 
