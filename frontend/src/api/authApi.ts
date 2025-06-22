@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8888/Zync-Franc/api/v1/auth';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL as string;
 
 // Create axios instance with base URL
 const api = axios.create({
